@@ -34,4 +34,14 @@ fun main() {
     println("x = ${x--}")
     println("x = ${--x}")
 
+    val myNumber = 120
+
+    if (myNumber >= 120) {
+        println("Greater or equal to 120")
+    }else if (myNumber > 90){
+        println("Greater than 90")
+    }else {
+      println("All the conditions failed")
+    }
+
 }
