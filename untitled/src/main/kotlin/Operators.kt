@@ -50,4 +50,15 @@ fun main() {
     } else {
         println("The user is not active")
     }
+
+    val isPlaying = true
+    val score = 100
+
+    if (isPlaying && score == 100) {
+        println("The player has full score points")
+    } else if (isPlaying){
+        println("The player has lower score than 100")
+    } else {
+        println("The player is not currently playing")
+    }
 }
