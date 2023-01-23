@@ -1,19 +1,11 @@
 fun main() {
-    val max = getMax(4, 7, 12)
-    println(max)
-
+    sendMessage("Ivaylo")
 }
 
-fun getMax(a: Int, b: Int) = if (a > b) a else b
-fun getMax(a: Double, b: Double) = if (a > b) a else b
-fun getMax(a: Int, b: Int, c: Int): Int {
-    if (a > b && a > c) {
-        return a
-    } else if (b > a && b > c) {
-        return b
-    } else {
-        return c
-    }
+fun sendMessage(name: String = "User", message: String = sendText()) {
+    println("Name = $name and message = $message")
 }
+
+fun sendText() = "Some text"
 
 
