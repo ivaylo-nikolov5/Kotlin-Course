@@ -1,11 +1,7 @@
 fun main() {
-    sendMessage("Ivaylo")
+    sum(5, 6, 7, 10, 5, 2, 1, 3, 4)
 }
 
-fun sendMessage(name: String = "User", message: String = sendText()) {
-    println("Name = $name and message = $message")
+fun sum(vararg numbers: Int) {
+    numbers.forEach { println(it) }
 }
-
-fun sendText() = "Some text"
-
-
